@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Inconsolata&family=Lobster+Two&family=Pacifico&family=Satisfy&family=Source+Code+Pro&family=Special+Elite&display=swap");
+
+
+/* 
+    font-family: 'Source Code Pro', monospace;
+
+    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Lobster Two', cursive;
+
+    font-family: 'Pacifico', cursive;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'Satisfy', cursive;
+
+    font-family: 'Special Elite', cursive;
+
+    font-family: 'Great Vibes', cursive;
+
+ */
+
+
+#transition-page {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(238,238,238,1);
+  margin: 0;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: auto;
+}
+
+#header {
+  width: 100%;
+  height: 12%;
+  background-color: rgba(238,238,238);
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+}
+
+#img-container {
+  width: 30%;
+  height: 100%;
+  background-color: none;
+  margin: 0 0 0 60px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-img {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-bar {
+  background-color: none;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 130%;
+}
+
+#nav-bar > ul {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+#nav-bar > ul > li {
+  list-style: none;
+}
+
+#nav-bar > ul > li > a{
+  font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 14px;
+}
+
+#nav-bar > ul > li > a:hover {
+  background-color: black;
+  color: white;
+  transition: ease-in 0.25s;
+}
+
+@media (min-width: 601px) {
+  #nav-bar > ul > li > a{
+    border: 2px solid black;
+    margin-right: 1em;
+    border-radius: 2px;
+    padding: 14px;
+  }
+  #nav-bar {
+    font-size: 120%;
+  }
+
+}
+
+
+@media (max-width: 600px) { 
+  
+  .section1 > #form-section > #form {
+      flex-direction: column;
+      justify-content
+  }
+  
+  #header {
+    flex-direction: column;
+  }
+  
+  #transition-page > .section3 > p {
+    font-size: 20px;
+  }
+  
+  #transition-page > .section3 > #video-section {
+    width: 60%;
+    height: 300px;
+    background-color: yellow;
+    margin: auto;
+  }
+  
+  #transition-page > .section2 > #intro-section > #intro-nav {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+  }
+  
+  #transition-page > .section1 { 
+     margin-top: 250px;
+  }
+  
+  #transition-page > .section1 > #form-section > p { 
+     font-size: 20px;
+  }
+  
+#email {
+  border-radius: 0;
+  padding: 5px;
+  border: 3px solid black;
+  font-size: 10px;
+  margin: auto auto auto 5px;
+}
+ 
+  #submit {
+    border-radius: 0;
+    padding: 5px;
+    border: 3px solid black;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 12px;
+  }
+  
+  #transition-page > .section2 { 
+     width: 80%;
+  }
+  
+  #transition-page > .section2 > #intro-section > #intro-nav > ul > p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+  }
+
+  #img-container {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-color: none;
+    box-sizing: border-box;
+  }
+   
+  #header-img {
+    height: 100%;
+    margin: auto;
+    background-color: none;
+  }
+  
+  #nav-bar {
+    background-color: #eeeeee;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #nav-bar > ul > li > a {
+    border: 3px solid black;
+    margin: 0 auto 0 -1.8em;
+    padding: 10px 46% 10px 46%;
+    border-radius: 0;
+    line-height: 2.5;
+  }
+
+  #nav-bar > ul {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: none;
+  }
+  
+}
+
+#form-section {
+  height: auto;
+  background-color: none;
+  width: 90%;
+  margin: 15px 5% 15px 5%;
+  text-align: center;
+}
+
+
+#section1 {
+  width: 80%;
+  height: auto;
+  background-color: none;
+  margin: auto;
+  margin-top: 150px;
+}
+
+#form-section p {
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+
+#form {
+  display: flex;
+  background-color: none;
+  flex-direction: row;
+  justify-content: center;
+}
+
+input[type="email"] {
+  border-radius: 0;
+  padding: 5px;
+  border: 3px solid black;
+  font-size: 15px;
+  margin-right: 5px;
+  margin-left: -15px;
+}
+
+input[type="submit"] {
+  border-radius: 0;
+  padding: 5px;
+  border: 3px solid black;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+#section2 {
+  width: 50%;
+  height: auto;
+  background-color: none;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+#intro-nav {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+}
+
+#intro-nav > ul {
+  float: center;
+  background-color: none;
+  margin: auto;
+}
+
+#intro-nav > ul > li {
+  padding-left: 15px;
+  margin-top: 15px;
+}
+
+#intro-nav > ul > p {
+  padding-left: 18px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+#video-section {
+  width: 60%;
+  height: 600px;
+  background-color: yellow;
+  margin: auto;
+}
+#section3 > p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+}
+
+#section3 {
+  text-align : center;
+  margin-bottom: 50px;
+}

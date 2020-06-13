@@ -1,0 +1,84 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!-- Background: https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_960_720.jpg -->
+<html>
+
+<head>
+	<title>Survey Page | FreeCodeCamp</title>
+</head>
+
+<body>
+	<div id="main">
+		<header id="heading-box">
+			<h1 id="title"><a href="https://www.freecodecamp.org" target="_blank">#freeCodeCamp</a> Survey Form</h1>
+			<p id="description"><em>Please fill data in the following required form !</em></p>
+		</header>
+
+		<form id="survey-form">
+			<div id="form-member" class="form-member">
+				<label id="name-label" class="name-label">Name <sup style="color:#ff00c8;font-size:1rem;">*</sup></label>
+				<input type="text" id="name" class="inputs" placeholder="Enter Your Name . . . ." required>
+			</div>
+			<div id="form-member" class="form-member">
+				<label id="email-label" class="email-label">Email <sup style="color:#ff00c8;font-size:1rem;">*</sup></label>
+				<input type="email" id="email" class="inputs" placeholder="abc@xyz.com . . . ." required>
+			</div>
+			<div id="form-member" class="form-member">
+				<label id="number-label" class="number-label">Age <sup style="color:#ff00c8;font-size:1rem;">*</sup></label>
+				<input type="number" id="number" class="inputs" max=100 min=18 placeholder="Enter Your Age . . . .">
+			</div>
+			<div id="form-member" class="form-member">
+				<p>What is your qualification ?</p>
+				<select id="dropdown" class="form-member" required>
+					<option disabled selected value>Select Your Education Level . . . .</option>
+					<option value="post-graduate">Post Graduate</option>
+					<option value="Graduate">Graduate</option>
+					<option value="under-graduate">Under Graduate</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div id="form-member-radio" class="form-member-radio">
+				<p>Gender </p>
+				<div id="gender">
+					<input type="radio" name="gender" value="male" checked>
+					<label id="gender-label"> Male</label>
+				</div>
+				<div id="gender">
+					<input type="radio" name="gender" value="female">
+					<label id="gender-label"> Female</label>
+				</div>
+				<div id="gender">
+					<input type="radio" name="gender" value="others">
+					<label id="gender-label"> Others</label>
+				</div>
+			</div>
+			<div id="form-member">
+				<p>What is/are your favourites from below list ?</p>
+				<label id="favourite-label"><input type="checkbox" id="favorite" value="games"> Games</label>
+				<label id="favourite-label"><input type="checkbox" id="favorite" value="sports"> Sports</label>
+				<label id="favourite-label"><input type="checkbox" id="favorite" value="singing"> Singing</label>
+				<label id="favourite-label"><input type="checkbox" id="favorite" value="swimming"> Swimming</label>
+				<label id="favourite-label"><input type="checkbox" id="favorite" value="tracking"> Tracking</label>
+			</div>
+			<div id="form-member" class="textarea">
+				<p>Any other thing do you want to describe ?</p>
+				<textarea id="describes" class="textareas" name="comment" placeholder="Description . . . ."></textarea>
+			</div>
+			<div id="form-member">
+				<input type="submit" id="submit" value="Submit">
+			</div>
+		</form>
+
+	</div>
+</body>
+
+</html>

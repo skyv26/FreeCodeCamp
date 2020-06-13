@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+}
+
+#main {
+  max-width: device-width;
+  height: auto;
+  background-color: rgb(222, 222, 222);
+  border-radius: 1%;
+  margin-top: 5%;
+}
+
+#title {
+  font-family: gotu;
+  padding-top: 1%;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+
+@media(min-width:480px){
+  #image{
+    width:100%;
+  }
+}
+
+h3 {
+  font-family: 'Lekton';
+  padding-top: 2%;
+}
+
+#list {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 150%;
+}
+
+#img-caption {
+  font-family: 'Lekton';
+  padding: 5%;
+}
+
+#img-div {
+  background-color: rgb(240, 240, 240);
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+article {
+  margin-top: 2%;
+  margin-left : 10%;
+  margin-right : 10%;
+}
+
+#concert-list {
+  border-collapse: collapse;
+  border: 2px solid black;    
+  font-size: 75%;
+  border-spacing: 2%;
+  width: 80%;
+  flaot: center;
+  margin : 5% auto;
+}
+th, td {
+  text-align: center;
+  border: 2px solid black;
+  padding: 5px;
+}

@@ -1,0 +1,63 @@
+<header id="header-container">
+  <div id="logo-box">
+    <img id="logo-icon" src="https://drive.google.com/uc?export=view&id=1t8YB8YltF3TqNBEGVAk5rOmGL8AEr5MF" alt"logo-icon" />
+    <b id="logo-text"><span>Base64</span></b>
+  </div>
+  <nav class="custom-nav custom-nav-sm visible-nav">
+    <ul class="nav custom-ul custom-ul-sm">
+      <li class="nav-item custom-li "><a class="nav-link custom-a active" href="#">Encoder</a></li>
+      <li class="nav-item custom-li"><a class="nav-link custom-a" href="#">Decoder</a></li>
+      <li class="nav-item custom-li"><a class="nav-link custom-a" href="#">About</a></li>
+    </ul>
+    <button id="hamburger">&#9776</button>
+  </nav>
+</header>
+<!-- 
+<nav class="custom-nav custom-nav-sm hidden-nav">
+  <ul class="nav custom-ul custom-ul-sm">
+    <li class="nav-item custom-li "><a class="nav-link custom-a active" href="#">Encoder</a></li>
+    <li class="nav-item custom-li"><a class="nav-link custom-a" href="#">Decoder</a></li>
+    <li class="nav-item custom-li"><a class="nav-link custom-a" href="#">About</a></li>
+  </ul>
+</nav> -->
+<section id="file-upload-section" class="file-upload-box">
+
+  <div id="file-container-1">
+    <text class="info-text">
+      <tspan>Convert Any File<br>To <a>Base64</a></tspan>
+    </text>
+
+    <div class="file-field">
+      <form id="upload-file" action="upload.php" method="POST">
+        <input id="input-box" for="upload-file-field" type="text" placeholder="Drag & Drop File">
+        <input type="file" id="upload-file-field" multiple>
+        <input id="file-button" type="button" value="OR CLICK HERE">
+        <input class="glyphicon glyphicon-asterisk" type="reset" id="reset-btn" style="display:none;" value="">
+      </form>
+      <button id="resetter" data-toggle="tooltip" data-placement="right" title="refresh"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+      <div id="btn-container">
+        <button type="button" id="upload-button" class="converter btn-property btn-success"><i class="fa fa-cloud-upload upload-icon" aria-hidden="true"></i>
+          <span>Convert<span></button>
+        <div id="progress-div">
+          <div id="custom-propbar" class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div><label id="progress-detail"><b>50%</b></label>
+          </div>
+          <button id="remove" alt="delete" data-toggle="tooltip" data-placement="bottom" title="remove"><i class="fa fa-times" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="output-container">
+    <textarea id="output-area">Your output will be here ...</textarea>
+    <div class="utility-ctn">
+      <button class="utility-btn">Copy</button>
+      <button class="utility-btn">Download</button>
+      <button class="utility-btn">Send E-mail</button>
+    </div>
+
+  </div>
+</section>
+<footer><span id="copyright">&copy; Copyright 2020, The SkyHub.</span><span id="developed"><i class="fa fa-fire" aria-hidden="true"></i>
+    Developed by<b>Aakash Verma</b></span></footer>
+
+<body>

@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Inconsolata&family=Lobster+Two&family=Pacifico&family=Satisfy&family=Source+Code+Pro&family=Special+Elite&display=swap");
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+#logo-text {
+  font-family: 'Satisfy', cursive;
+  width: 250px;
+  color: white;
+  background-color: none;
+  padding: 5px;
+  margin: 5px 5px 5px 55px;
+  display: flex;
+  font-size: 1.4em;
+  font-weight: 900;
+  justify-content: flex-start;
+}
+
+#logo-text > h3 {
+  margin: auto;
+  text-shadow: 4px 4px 1px blue;
+}
+
+#navbar {
+  background-color: none;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 130%;
+}
+
+#navbar > ul {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-top: 19px;
+  align-self: center;
+}
+
+#navbar > ul > li {
+  list-style: none;
+}
+
+#navbar > ul > li > a{
+  font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  border-radius: 1px;
+  padding: 14px;
+  font-weight: 700;
+  margin-right: 40px;
+}
+
+#navbar > ul > li > a:hover {
+  background-color: white;
+  color: black;
+  box-shadow:20px 20px 100px #eeeeee;  
+}
+
+#logo-text > h3:hover {
+  margin: auto;
+  text-shadow: 10px 10px 10px blue;
+}
+
+#welcome-section  h1 {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 15%;  
+}
+
+@media (max-width: 700px) {
+  #logo-text {
+    width: 250px;
+    padding: 5px;
+    margin: 13px 5px 5px 55px;
+    display: flex;
+    font-size: 1.2em;
+  }
+  #navbar {
+    font-size: 70%;
+  }
+  #navbar > ul > li > a{
+    border: 1px solid white;
+    border-radius: 1px;
+    padding: 14px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 570px) {
+  .projects {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #welcome-section {
+    margin-top: 180px;
+  }
+ 
+  #welcome-section > h1 {
+    font-size: 3em;
+    padding-top: 35%;
+   }
+  
+
+  #logo-text {
+    width: 0px;
+    visibility: hidden;
+  }
+  
+  #navbar {
+    background-color: none;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    font-size: 100%;
+    margin: auto;
+  }
+  #navbar > ul {
+    width: 100%;
+    display: flex;
+  }
+  #navbar > ul > li {
+    display: flex;
+  }
+  #navbar > ul > li > a{
+    border: 1px solid white;
+    border-radius: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-self: center;
+    margin: auto;
+    margin-right: 15px;
+  }
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image : url("https://cdn.pixabay.com/photo/2020/04/03/07/27/galaxy-4997728_960_720.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+
+#projects {
+  background-color: tan;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+#project-header {
+  font-size: 3.5em;
+}
+
+#project-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 2fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.thumbnail {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}

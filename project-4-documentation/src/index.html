@@ -1,0 +1,136 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+      <div id="topic-div">
+        <nav id="navbar" class="navbar">
+          <header id="nav-header">
+          <p> GO Documentation </p>
+        </header>
+          <ul>
+            <li><a href="#1._Getting_Started" class="nav-link first-topic">1. Getting Started</a></li>
+            <li><a href="#2._First_Program" class="nav-link">2. First Program</a></li>
+            <li><a href="#3._Types" class="nav-link">3. Types</a></li>
+            <li><a href="#4._Variables" class="nav-link">4. Variables</a></li>
+            <li><a href="#5._Control_Structure" class="nav-link">5. Control Structure</a></li>
+            <li><a href="#6._Arrays_&_Maps" class="nav-link">6. Arrays & Maps</a></li>
+            <li><a href="#7._Functions" class="nav-link">7. Functions</a></li>
+            <li><a href="#8._Pointers" class="nav-link">8. Pointers</a></li>
+            <li><a href="#End" class="last-topic nav-link">End</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main id="main-doc">
+        <section id="1._Getting_Started" class="main-section">
+          <header>1. Getting Started</header>
+          <article>
+            <p>Computer programming is the art, craft and science ofwriting programs which define how computers operate.This  book  will   teach  you  how  to write  computer  pro-grams using a   programming   language designed by Google named Go.</p>
+            
+            <p>Go  is   a  general   purpose  programming  language   withadvanced features and a clean syntax. Because of itswide availability on a variety of platforms, its robustwell-documented common library, and its focus on goodsoftware   engineering   principles,   Go   is   an   ideal   lan-guage to learn as your first programming language.</p>
+            <p>The   process   we   use   to   write   software   using   Go   (andmost   programming   languages)   is   fairly   straightfor-ward:</p>
+            <ol>
+              <li>Gather requirements</li>
+              <li>Find a solution</li>
+              <li>Write source code to implement the solution</li>
+              <li>Compile the source code into an executable</li>
+              <li>Run and test the program to make sure it works</li>
+            </ol>
+            <p>This   process   is   iterative   (meaning   its   done   manytimes)   and   the   steps   usually   overlap.   But   before   wewrite our first program in Go there are a few prerequi-site concepts we need to understand</p>
+          </article>
+        </section>
+        <section id="2._First_Program" class="main-section">
+          <header>2. First Program</header>
+          <article>
+            <p>Traditionally the first  program  you  write  in  any pro-gramming language is called a “Hello World” program– a program that simply outputs  Hello World  to yourterminal. Let's write one using Go.</p>
+            <p>First create a new folder where we can store our pro-gram.   The   installer   you   used   in   chapter   1   created   afolder   in   your   home   directory   named  Go.   Create   afolder   named  ~/Go/src/golang-book/chapter2.   (Where~  means your home directory) From the terminal youcan do this by entering the following commands:</p>
+            <code>mkdir Go/src/golang-book<br />mkdir Go/src/golang-book/chapter2</code>
+            <p>Using your text editor type in the following:</p>
+            <code>package main<br /><br />import "fmt"<br /><br />// this is a comment<br /><br />func main() {<br/><br />    fmt.Println("Hello World")<br /><br />}</code>
+            <p>Make sure your file is identical to what is shown hereand   save   it   as  main.go  in   the   folder   we   just   created.Open up a new terminal and type in the following:</p>
+            <code>cd Go/src/golang-book/chapter2go<br />run main.go</code>
+            <p>You should see Hello World displayed in your terminal.The go run command takes the subsequent files   (sep-arated   by   spaces),   compiles   them   into   an   executablesaved in a temporary directory and then runs the pro-gram. If you didn't see Hello World displayed you mayhave made a mistake when typing in the program. TheGo compiler will give you hints about where the mis-take lies. Like most compilers, the Go compiler is ex-tremely pedantic and has no tolerance for mistakes.</p>
+          </article>
+        </section>
+        <section id="3._Types" class="main-section">
+          <header>3. Types</header>
+          <article>
+            <p>n   the   last   chapter   we   used   the   data   type   string   tostore  Hello World.   Data   types   categorize   a   set   of   re-lated values, describe the operations that can be doneon   them   and   define   the   way   they   are   stored.   Sincetypes can be a difficult concept to grasp we will look atthem   from   a   couple   different   perspectives   before   wesee how they are implemented in Go</p>
+            <p>Philosophers   sometimes   make   a   distinction   betweentypes and tokens. For example suppose you have a dognamed Max. Max is the token (a particular instance ormember)   and   dog   is   the   type   (the   general   concept).“Dog” or “dogness” describes a set of properties that alldogs   have   in   common.   Although   oversimplistic   wemight reason like this: All dogs have 4 legs, Max is adog, therefore Max has 4 legs. Types in programminglanguages   work   in   a   similar   way:  All   strings   have   alength, x is a string, therefore x has a length.</p>
+            <p>In mathematics we often talk about sets. For example: (the set of all real numbers) or ℕ (the set of all natural numbers). Each member of these sets shares properties with all the other members of the set. For exam-ple all natural numbers are associative: “for all natu-ral numbers a, b, and c, a + (b + c) = (a + b) + c and a ×(b × c) = (a × b) × c.” In this way sets are similar totypes in programming languages since all the values ofa particular type share certain properties. </p>
+            <p>Go   is   a   statically   typed  programming   language.   Thismeans that variables always have a specific type andthat type cannot change. Static typing may seem cum-bersome at first. You'll spend a large amount of yourtime just trying to fix your program so that it finallycompiles. But types help us reason about what our pro-gram is doing and catch a wide variety of common mis-takes.Go   comes   with   several   built-in   data   types   which   wewill now look at in more detail.</p>
+          </article>
+        </section>
+        <section id="4._Variables" class="main-section">
+          <header>4. Variables</header>
+          <article>
+            <p>Up until now we have only seen programs that use lit-eral values (numbers, strings, etc.) but such programsaren't   particularly   useful.   To   make   truly   useful   pro-grams   we   need   to   learn   two   new   concepts:   variablesand control flow statements. This chapter will explorevariables in more detail</p>
+            <p>4 VariablesUp until now we have only seen programs that use lit-eral values (numbers, strings, etc.) but such programsaren't   particularly   useful.   To   make   truly   useful   pro-grams   we   need   to   learn   two   new   concepts:   variablesand control flow statements. This chapter will explorevariables in more detail.A  variable   is   a   storage   location,   with   a   specific   typeand an associated name. Let's change the program wewrote in chapter 2 so that it uses a variable:</p>
+            <code>package main<br /><br />import "fmt"<br /><br />func main() {<br /><br />    var x string = "Hello World"<br /><br />    fmt.Println(x)<br /><br />}</code>
+          </article>
+        </section>
+        <section id="5._Control_Structure" class="main-section">
+          <header>5. Control Structure
+          </header>
+          <article>
+            <p>Now   that   we   know   how   to   use   variables   it's   time   tostart writing some useful programs. First let's write aprogram that counts to 10, starting from 1, with eachnumber on its own line. Using what we've learned sofar we could write this:</p>
+            <code>package main<br />import "fmt"<br /><br />func main() {<br />    fmt.Println(1)<br />    fmt.Println(2)<br />    fmt.Println(3)<br />    fmt.Println(4)<br />    fmt.Println(5)<br />    fmt.Println(6)<br />    fmt.Println(7)<br />    fmt.Println(8)<br />    fmt.Println(9)<br />    fmt.Println(10)<br /><br />}</code>
+            <p>But both of these programs are pretty tedious to write.What   we   need   is   a   way   of   doing   something   multipletimes.</p>
+          </article>
+        </section>
+         <section id="6._Arrays_&_Maps" class="main-section">
+           <header>6. Arrays & Maps</header>
+           <article>
+             <p>In chapter 3 we learned about Go's basic types. In thischapter we will look at three more built-in types: ar-rays, slices and maps.</p>
+             <h4>Arrays</h4>
+             <p>An array is a numbered sequence of elements of a sin-gle type with a fixed length. In Go they look like this:</p>
+             <code>var x [5]int</code>
+             <p>x  is   an   example   of   an   array   which   is   composed   of   5ints. Try running the following program:</p>
+             <code>package main<br /><br />import "fmt"<br />func main() {<br />var x [5]int<br />x[4] = 100<br />fmt.Println(x)<br />}</code>
+             <p>You should see this</p>
+             <code>[0 0 0 0 100]</code>
+             <p>x[4] = 100  should be read “set the 5th  element of thearray x to 100”. It might seem strange that x[4] repre-sents the 5th element instead of the 4th but like strings,arrays   are   indexed   starting   from   0.   Arrays   are   ac-cessed     in     a     similar     way.     We     could     changefmt.Println(x) to fmt.Println(x[4]) and we would get100.</p>
+             <h4>Maps</h4>
+             <p>A  map   is   an   unordered   collection   of   key-value   pairs.Also known as an associative array, a hash table or adictionary, maps are used to look up a value by its as-sociated key. Here's an example of a map in Go:</p>
+             <code>var x map[string]int</code>
+             <p>The map type is represented by the keyword  map, fol-lowed by the key type in brackets and finally the valuetype. If you were to read this out loud you would say “xis a map of strings to ints.”</p>
+             <p>Like   arrays   and   slices   maps   can   be   accessed   usingbrackets. Try running the following program:</p>
+             <code>var x map[string]int<br />x["key"] = 10<br />fmt.Println(x)</code>
+           </article>
+        </section>
+        <section id="7._Functions" class="main-section">
+          <header>7. Functions</header>
+          <article>
+            <p>A function is an independent section of code that mapszero or more input parameters to zero or more outputparameters.   Functions   (also   known   as   procedures   orsubroutines) are often represented as a black box: (theblack box represents the function) Until now the programs  we have written in Go haveused only one function:</p>
+            <code>func main() {}</code>
+            <p>Remember this program from chapter 6:</p>
+            <code>func main() {<br />        xs := []float64{98,93,77,82,83}<br />        total := 0.0<br />        for _, v := range xs {<br />                total += v<br />}<br />        fmt.Println(total / float64(len(xs)))<br />}</code>
+            <p>This program computes the average of a series of num-bers.   Finding   the   average   like   this   is   a   very   generalproblem,  so  its   an  ideal   candidate  for  definition  as  afunction.</p>
+          </article>
+        </section>
+        <section id="8._Pointers" class="main-section">
+          <header>8. Pointers</header>
+          <article>
+            <p>When we call a function that takes an argument, thatargument is copied to the function:</p>
+            <code>func zero(x int) {<br />        x = 0<br />        }<br />        func main() {<br />        x := 5<br />        zero(x<br />        )fmt.Println(x) // x is still 5<br />}</code>
+            <p>In this program the  zero  function will not modify theoriginal x variable in the main function. But what if wewanted to? One way to do this is to use a special datatype known as a pointer.</p>
+          </article>
+        </section>
+        <section id="End" class="main-section">
+          <header>End</header>
+        </section>
+      </main>
+  </body>
+</html>
